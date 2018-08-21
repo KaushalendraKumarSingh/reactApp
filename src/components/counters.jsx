@@ -14,8 +14,8 @@ class Counters extends Component {
     return (
       <div>
         {this.state.counters.map(e => (
-          <Counter key={e.id} value={e.value} selected={true}>
-            <h4>Counter #{e.id}</h4>
+          <Counter key={e.id} value={e.value} selected id={e.id}>
+            {/* <h4>Counter #{e.id}</h4> */}
           </Counter>
           //used props in couinter.jsx to access the vaue and selected
           // default selected == true

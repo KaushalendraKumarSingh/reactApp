@@ -13,7 +13,8 @@ class Counter extends Component {
     console.log("props", this.props); //the property value and selected in counters.jsx
     return (
       <React.Fragment>
-        {this.props.children}
+        <h4>{this.props.id}</h4>
+        {/* <h3>{this.props.children}</h3> */}
         {/* rendered the line between <Counter> and </Counter> in counters.jsx */}
         <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
         <button
